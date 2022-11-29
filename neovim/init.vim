@@ -1,7 +1,8 @@
 let g:airline_theme="deus"
 
 inoremap <expr> <cr> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
-nnoremap <C-t> :NERDTreeFocus<CR>
+nnoremap <C-f> :NERDTreeFocus<CR>
+nnoremap <C-t> :NERDTreeToggle<CR>
 
 call plug#begin()
 Plug 'vim-airline/vim-airline'
@@ -16,6 +17,6 @@ set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 set expandtab
-set autoindent
+set noautoindent
 set copyindent
 set number
