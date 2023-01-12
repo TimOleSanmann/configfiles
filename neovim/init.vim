@@ -46,6 +46,8 @@ colorscheme tokyonight
 
 nnoremap tt :NvimTreeToggle<CR>
 nnoremap tf :NvimTreeFocus<CR>
+nnoremap ts :NvimTreeFindFile 
+nnoremap tr :NvimTreeResize 
 nnoremap ff :Telescope find_files<CR>
 nnoremap fg :Telescope live_grep<CR>
 nnoremap <Right> :bn<CR>
