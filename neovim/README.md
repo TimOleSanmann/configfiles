@@ -29,3 +29,7 @@ brew install ripgrep
 # Interesting Pages
 ## Vim Cheat Sheet
 [Link](https://vim.rtorr.com/)
+## Neovim Command Index
+[Link](https://neovim.io/doc/user/vimindex.html)
+## Neovim Terminal Commands
+[Link](https://neovim.io/doc/user/nvim_terminal_emulator.html)
