@@ -118,3 +118,10 @@ require'lspconfig'.pyright.setup{
     on_attach = on_attach,
     flags = lsp_flags,
 }
+
+
+require'lspconfig'.coffeesense.setup{
+    capabilities = capabilities,
+    on_attach = on_attach,
+    flags = lsp_flags,
+}

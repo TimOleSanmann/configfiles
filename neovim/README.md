@@ -15,6 +15,10 @@ npm install -g pyright
 ```
 npm install -g typescript typescript-language-server
 ```
+### coffeesense (coffeescript)
+```
+npm install -g coffeesense-language-server
+```
 ### Ripgrep
 Make sure, that ripgrep is install, because it is the grep tool used by telescope
 #### Mac
