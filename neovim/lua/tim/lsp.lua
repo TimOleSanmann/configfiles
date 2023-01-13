@@ -112,15 +112,21 @@ require'lspconfig'.tsserver.setup{
     flags = lsp_flags,
 }
 
-
 require'lspconfig'.pyright.setup{
     capabilities = capabilities,
     on_attach = on_attach,
     flags = lsp_flags,
 }
 
-
 require'lspconfig'.coffeesense.setup{
+    capabilities = capabilities,
+    on_attach = on_attach,
+    flags = lsp_flags,
+}
+
+capabilities.textDocument.completion.completionItem.snippetSupport = true
+
+require'lspconfig'.html.setup{
     capabilities = capabilities,
     on_attach = on_attach,
     flags = lsp_flags,
