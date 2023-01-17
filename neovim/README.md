@@ -29,7 +29,11 @@ Make sure, that ripgrep is install, because it is the grep tool used by telescop
 ```
 brew install ripgrep
 ```
-
+# Quick Update local
+## Unix
+```
+./scripts/update_unix.sh
+```
 # Interesting Pages
 ## Vim Cheat Sheet
 [Link](https://vim.rtorr.com/)
