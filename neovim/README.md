@@ -41,5 +41,7 @@ Automatical update the repository from the local configuration
 ```
 # Interesting Websites
 [Vim Cheat Sheet](https://vim.rtorr.com/)
+
 [Neovim Command Index](https://neovim.io/doc/user/vimindex.html)
+
 [Neovim Terminal Commands](https://neovim.io/doc/user/nvim_terminal_emulator.html)
