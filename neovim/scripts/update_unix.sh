@@ -11,7 +11,7 @@ then
     then
         TARGET=$DEFAULT_TARGET
     else
-        echo "Error: Target Folder must me defined"
+        echo "\nError: Target Folder must me defined"
         exit
     fi
 fi
