@@ -23,8 +23,6 @@ Plug 'sheerun/vim-polyglot'
 Plug 'BurntSushi/ripgrep'
 Plug 'windwp/nvim-ts-autotag'
 Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build' }
-
-
 call plug#end()
 
 set tabstop=4
