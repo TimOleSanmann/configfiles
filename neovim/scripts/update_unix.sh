@@ -7,11 +7,12 @@ DEFAULT_TARGET=~/.config/nvim
 if [ -z "$TARGET" ]
 then
     read -p "No target defined. Use default? [$DEFAULT_TARGET] (y/Y/n/N)" -n 1 -r
+    printf "\n"
     if [[ $REPLY =~ ^[Yy]$ ]] 
     then
         TARGET=$DEFAULT_TARGET
     else
-        echo "\nError: Target Folder must me defined"
+        echo "Error: Target Folder must me defined"
         exit
     fi
 fi

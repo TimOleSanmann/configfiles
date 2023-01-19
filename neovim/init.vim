@@ -27,6 +27,8 @@ Plug 'tpope/vim-commentary'
 Plug 'f-person/git-blame.nvim'
 call plug#end()
 
+let g:gitblame_message_template = '<author> • <date> • <summary> • <sha>'
+
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4

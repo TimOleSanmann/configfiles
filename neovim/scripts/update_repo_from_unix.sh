@@ -7,11 +7,12 @@ DEFAULT_SOURCE=~/.config/nvim
 if [ -z "$SOURCE" ] 
 then 
     read -p "No source defined. Use default? [$DEFAULT_SOURCE] (y/Y/n/N)" -n 1 -r
+    printf "\n"
     if [[ $REPLY =~ ^[Yy]$ ]]
     then
         SOURCE=$DEFAULT_SOURCE
     else
-        echo "\nError: Source folder must me defined"
+        echo "Error: Source folder must me defined"
         exit
     fi
 fi
