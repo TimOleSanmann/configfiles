@@ -60,3 +60,4 @@ nnoremap fg :Telescope live_grep<CR>
 nnoremap <Right> :bn<CR>
 nnoremap <Left> :bp<CR>
 nnoremap <Del> :bd<CR>
+nnoremap <C-s> :mksession!<CR>
