@@ -12,7 +12,7 @@ then
     then
         SOURCE=$DEFAULT_SOURCE
     else
-        echo "Error: Source folder must me defined"
+        echo "Error: Source folder must be defined"
         exit
     fi
 fi

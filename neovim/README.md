@@ -39,6 +39,15 @@ Automatical update the repository from the local configuration
 ```
 ./scripts/update_repo_from_unix.sh
 ```
+## Windows
+Automatical update for the local neovim configuration if the repository is not cloned directly to the used directory
+```
+.\scripts\update_windows.ps1
+```
+Automatical update the repository from the local configuration
+```
+.\scripts\update_repo_from_windows.ps1
+```
 # Interesting Websites
 [Vim Cheat Sheet](https://vim.rtorr.com/)
 

@@ -12,7 +12,7 @@ then
     then
         TARGET=$DEFAULT_TARGET
     else
-        echo "Error: Target Folder must me defined"
+        echo "Error: Target Folder must be defined"
         exit
     fi
 fi
