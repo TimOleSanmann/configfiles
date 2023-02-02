@@ -57,6 +57,7 @@ nnoremap tm :NvimTreeResize -10<CR>
 nnoremap tr :NvimTreeResize 
 nnoremap ff :Telescope find_files<CR>
 nnoremap fg :Telescope live_grep<CR>
+nnoremap fs :Telescope git_status<CR>
 nnoremap <Right> :bn<CR>
 nnoremap <Left> :bp<CR>
 nnoremap <Del> :bd<CR>
