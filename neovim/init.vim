@@ -37,6 +37,7 @@ set noautoindent
 set copyindent
 set number
 set termguicolors
+set mouse=
 
 lua require('tim/lsp')
 lua require('tim/tree')
