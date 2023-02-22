@@ -25,6 +25,7 @@ Plug 'windwp/nvim-ts-autotag'
 Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build' }
 Plug 'tpope/vim-commentary'
 Plug 'f-person/git-blame.nvim'
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
 call plug#end()
 
 let g:gitblame_message_template = '<author> • <date> • <summary> • <sha>'
