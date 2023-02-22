@@ -23,6 +23,14 @@ npm install -g coffeesense-language-server
 ```
 npm i -g vscode-langservers-extracted
 ```
+### Bash 
+```
+npm i -g bash-language-server
+```
+### Yarn
+```
+npm i -g yarn
+```
 ### Ripgrep
 Make sure, that ripgrep is install, because it is the grep tool used by telescope
 #### Mac

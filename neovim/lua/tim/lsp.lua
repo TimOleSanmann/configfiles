@@ -131,3 +131,9 @@ require'lspconfig'.html.setup{
     on_attach = on_attach,
     flags = lsp_flags,
 }
+
+require'lspconfig'.bashls.setup{
+    capabilities = capabilities,
+    on_attach = on_attach,
+    flags = lsp_flags,
+}
