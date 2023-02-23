@@ -26,6 +26,7 @@ Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'cmake -S. -Bbuild -DCM
 Plug 'tpope/vim-commentary'
 Plug 'f-person/git-blame.nvim'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
+Plug 'lukas-reineke/indent-blankline.nvim'
 call plug#end()
 
 let g:gitblame_message_template = '<author> • <date> • <summary> • <sha>'
