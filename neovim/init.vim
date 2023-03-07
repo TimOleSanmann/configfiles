@@ -1,4 +1,4 @@
-call plug#begin()
+,call plug#begin()
 Plug 'neovim/nvim-lspconfig'
 Plug 'neovim/nvim-lspconfig'
 Plug 'hrsh7th/cmp-nvim-lsp'
@@ -11,8 +11,9 @@ Plug 'hrsh7th/vim-vsnip'
 Plug 'nvim-lualine/lualine.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
+Plug 'ellisonleao/gruvbox.nvim'
 Plug 'nvim-tree/nvim-web-devicons' " optional, for file icons
-Plug 'nvim-tree/nvim-tree.lua'
+Plug 'nvim-tree/nvim-tree.lua', { 'commit': '9c97e6449b0b0269bd44e1fd4857184dfa57bb4c'}
 Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
@@ -27,6 +28,8 @@ Plug 'tpope/vim-commentary'
 Plug 'f-person/git-blame.nvim'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
 Plug 'lukas-reineke/indent-blankline.nvim'
+Plug 'folke/twilight.nvim'
+Plug 'folke/zen-mode.nvim'
 call plug#end()
 
 let g:gitblame_message_template = '<author> • <date> • <summary> • <sha>'
@@ -49,7 +52,8 @@ lua require('tim/lualine')
 lua require('tim/treesitter')
 lua require('tim/telescope')
 
-colorscheme tokyonight
+set background=dark
+colorscheme gruvbox
 
 
 nnoremap tt :NvimTreeToggle<CR>
