@@ -30,6 +30,7 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
 Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'folke/twilight.nvim'
 Plug 'folke/zen-mode.nvim'
+Plug 'phaazon/hop.nvim'
 call plug#end()
 
 let g:gitblame_message_template = '<author> • <date> • <summary> • <sha>'
@@ -51,6 +52,7 @@ lua require('tim/bufferline')
 lua require('tim/lualine')
 lua require('tim/treesitter')
 lua require('tim/telescope')
+lua require('tim/hop')
 
 set background=dark
 colorscheme gruvbox
@@ -69,3 +71,5 @@ nnoremap <Right> :bn<CR>
 nnoremap <Left> :bp<CR>
 nnoremap <Del> :bd<CR>
 nnoremap <C-s> :mksession!<CR>
+nnoremap hw :HopWord<CR>
+nnoremap hl :HopLine<CR>
