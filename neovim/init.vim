@@ -71,5 +71,5 @@ nnoremap <Right> :bn<CR>
 nnoremap <Left> :bp<CR>
 nnoremap <Del> :bd<CR>
 nnoremap <C-s> :mksession!<CR>
-nnoremap hw :HopWord<CR>
-nnoremap hl :HopLine<CR>
+nnoremap mm :HopWord<CR>
+nnoremap ml :HopLine<CR>
