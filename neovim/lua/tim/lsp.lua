@@ -1,5 +1,6 @@
   -- Set up nvim-cmp.
   local cmp = require'cmp'
+  util = require "lspconfig/util"
 
 -- better autocompletion experience
 vim.o.completeopt = 'menuone,noselect'
@@ -136,4 +137,11 @@ require'lspconfig'.bashls.setup{
     capabilities = capabilities,
     on_attach = on_attach,
     flags = lsp_flags,
+}
+
+require'lspconfig'.gopls.setup{
+    capabilities = capabilities,
+    on_attach = on_attach,
+    flags = lsp_flags,
+    cmd = {"gopls", "serve"},
 }

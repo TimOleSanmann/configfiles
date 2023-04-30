@@ -27,6 +27,13 @@ npm i -g vscode-langservers-extracted
 ```
 npm i -g bash-language-server
 ```
+### Go
+This step requires go to be installed. Additionally, it could be possible, that you have to add go to you path.
+```
+go install golang.org/x/tools/gopls@latest
+```
+For debugging, you also have to install delve:
+[Delve Installation](https://github.com/go-delve/delve/tree/master/Documentation/installation)
 ### Yarn
 ```
 npm i -g yarn
