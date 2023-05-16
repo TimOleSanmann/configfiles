@@ -22,3 +22,6 @@ Follow the installation instructions for Oh my ZSH on
 ## Lazygit
 Install Lazygit following the installation guide:
 [Lazygit](https://github.com/jesseduffield/lazygit#installation)
+
+## GCC
+Make sure gcc is installed.
