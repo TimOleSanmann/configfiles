@@ -17,4 +17,5 @@ Follow the installation instructions for Oh my ZSH on
 - zsh-autosuggestions
 
 ## Lazygit
-
+Install Lazygit following the installation guide:
+[Lazygit](https://github.com/jesseduffield/lazygit#installation)
