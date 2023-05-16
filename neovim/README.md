@@ -1,6 +1,17 @@
 # Configuration
 ## Install neovim
+### macOS
+```
+brew install neovim
+```
+### openSUSE
+```
+sudo zypper install neovim
+```
 ## Install Plug
+Follow installation instructions:
+[vim-plug](https://github.com/junegunn/vim-plug#neovim)
+
 ## Install Plugins
 Enter following command in neovims commnand mode
 ```
