@@ -55,6 +55,10 @@ Make sure, that ripgrep is install, because it is the grep tool used by telescop
 ```
 brew install ripgrep
 ```
+#### openSUSE
+```
+sudo zypper install ripgrep
+```
 # Script usage
 Automatical update for the local neovim configuration if the repository is not cloned directly to the used directory
 ## Unix
