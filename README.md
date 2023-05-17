@@ -25,3 +25,16 @@ Install Lazygit following the installation guide:
 
 ## GCC
 Make sure gcc is installed.
+
+## Delta
+Delta is a git diff tool. Install it with the following repo:
+[Delta](https://github.com/dandavison/delta)
+
+## Docker
+Make sure Docker is installed.
+For Windows and macOS you can follow [Docker](https://www.docker.com/)
+
+For openSUSE do:
+```
+sudo zypper install docker
+```
