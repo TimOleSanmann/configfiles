@@ -163,3 +163,9 @@ require'lspconfig'.gopls.setup{
     flags = lsp_flags,
     cmd = {"gopls", "serve"},
 }
+
+require'lspconfig'.cssls.setup{
+    capabilities = capabilities,
+    on_attach = on_attach,
+    flags = lsp_flags,
+}
