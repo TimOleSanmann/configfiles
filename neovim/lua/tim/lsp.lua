@@ -133,6 +133,12 @@ require'lspconfig'.html.setup{
     flags = lsp_flags,
 }
 
+require'lspconfig'.cssls.setup{
+    capabilities = capabilities,
+    on_attach = on_attach,
+    flags = lsp_flags,
+}
+
 require'lspconfig'.bashls.setup{
     capabilities = capabilities,
     on_attach = on_attach,
