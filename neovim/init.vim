@@ -33,6 +33,7 @@ Plug 'folke/zen-mode.nvim'
 Plug 'phaazon/hop.nvim'
 Plug 'sebdah/vim-delve'
 Plug 'github/copilot.vim'
+Plug 'preservim/vimux'
 call plug#end()
 
 let g:gitblame_message_template = '<author> • <date> • <summary> • <sha>'
