@@ -33,6 +33,8 @@ Delta is a git diff tool. Install it with the following repo:
 ## Docker
 Make sure Docker is installed.
 For Windows and macOS you can follow [Docker](https://www.docker.com/)
+### When WSL is used
+You can set a configuration to use the windows docker desktop environment from the used WSL distro to avoid installing docker inside the devloping WSL distro. Therefore, go into Docker Desktop --> Settings --> Resources --> WSL Integration. There you can check the distros where you want to use docker.
 
 For openSUSE do:
 ```
