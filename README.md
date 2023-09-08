@@ -7,8 +7,8 @@ Install and configure Hack Nerd Font for the Terminal emulator:
 [Nerdfont](https://www.nerdfonts.com/)
 ### Zsh
 On Linux and macOS, make sure, the used shell is ZSH.
-### Git
-Make sure, git is installed and configured
+### Git, Curl
+Make sure, git and curl are installed and configured
 ### Oh my ZSH
 Follow the installation instructions for Oh my ZSH on
 [Ohmyzsh](https://ohmyz.sh/#install)
