@@ -40,3 +40,8 @@ For openSUSE do:
 ```
 sudo zypper install docker
 ```
+## TMUX
+First install tmux as the go to window multiplexer.
+
+### TPM 
+Install [TPM](https://github.com/tmux-plugins/tpm).
