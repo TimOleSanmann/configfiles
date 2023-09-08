@@ -13,7 +13,6 @@ Plug 'kyazdani42/nvim-web-devicons'
 Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
 Plug 'ellisonleao/gruvbox.nvim'
 Plug 'nvim-tree/nvim-web-devicons' " optional, for file icons
-Plug 'nvim-tree/nvim-tree.lua'
 Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
@@ -49,7 +48,6 @@ set termguicolors
 set mouse=
 
 lua require('tim/lsp')
-lua require('tim/tree')
 lua require('tim/autopairs')
 lua require('tim/bufferline')
 lua require('tim/lualine')
