@@ -37,15 +37,16 @@ call plug#end()
 
 let g:gitblame_message_template = '<author> • <date> • <summary> • <sha>'
 
-set tabstop=4
-set softtabstop=4
-set shiftwidth=4
-set expandtab
-set noautoindent
-set copyindent
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
+set autoindent
 set number
+set relativenumber
 set termguicolors
 set mouse=
+set clipboard=unnamedplus
+set undofile
 
 lua require('tim/lsp')
 lua require('tim/autopairs')
@@ -59,7 +60,12 @@ set background=dark
 colorscheme gruvbox
 
 
-nnoremap tt :Explore<CR>
+nnoremap tt :NvimTreeToggle<CR>
+nnoremap tf :NvimTreeFocus<CR>
+nnoremap ts :NvimTreeFindFile 
+nnoremap tp :NvimTreeResize +10<CR> 
+nnoremap tm :NvimTreeResize -10<CR>
+nnoremap tr :NvimTreeResize 
 nnoremap ff :Telescope find_files<CR>
 nnoremap fg :Telescope live_grep<CR>
 nnoremap fs :Telescope git_status<CR>
