@@ -1,0 +1,54 @@
+#set page(
+paper: "a4",
+flipped: true,
+columns: 2
+)
+
+#set text(
+  font: "Verdana"
+)
+
+#table(
+  columns: (1fr, 1fr),
+  [*Shortcut*], [*Function*],
+  [*Layout Mode*], [],
+  [cmd + shift + z], [Layout Mode: Floating],
+  [cmd + shift + x], [Layout Mode: Bsp],
+  [cmd + shift + c], [Layout Mode: Stack],
+  [*Switch Space*], [],
+  [ctrl + left], [Previous Space],
+  [ctrl + right], [Next Space],
+  [ctrl + 1], [Space 1],
+  [ctrl + 2], [Space 2],
+  [ctrl + 3], [Space 3],
+  [ctrl + 4], [Space 4],
+  [ctrl + 5], [Space 5],
+  [ctrl + 6], [Space 6],
+  [*Floating Window*], [],
+  [ctrl + alt + left], [Window to left half], 
+  [ctrl + alt + right], [Window to right half],
+  [ctrl + alt + return], [Window full-size],
+  [ctrl + alt + m], [Window to two middle columns],
+  [ctrl + alt + h], [Window to first column],
+  [ctrl + alt + j], [Window to second column],
+  [ctrl + alt + k], [Window to third column],
+  [ctrl + alt + l], [Window to fourth column],
+)
+#table(
+  columns: (1fr, 1fr),
+  [*Boxed Window*], [],
+  [ctrl + cmd + left], [Window swap left], 
+  [ctrl + cmd + right], [Window swarp right], 
+  [ctrl + cmd + b], [Balance windows in space], 
+  [ctrl + cmd + alt + left], [Focus window left], 
+  [ctrl + cmd + alt + right], [Focus window right], 
+  [*Shift window between spaces*], [],
+  [cmd + shift + left], [Shift window to Previous space], 
+  [cmd + shift + left], [Shift window to Next space], 
+  [cmd + shift + 1], [Shift window to space 1], 
+  [cmd + shift + 2], [Shift window to space 2], 
+  [cmd + shift + 3], [Shift window to space 3], 
+  [cmd + shift + 4], [Shift window to space 4], 
+  [cmd + shift + 5], [Shift window to space 5], 
+  [cmd + shift + 6], [Shift window to space 6], 
+)
