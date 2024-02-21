@@ -47,6 +47,17 @@ ctrl + cmd - b : yabai -m space --balance
 ctrl + cmd + alt - left : yabai -m window --focus west
 ctrl + cmd + alt - right : yabai -m window --focus east
 
+# Stack windows
+## Change window focus
+ctrl + cmd - up : yabai -m window --focus stack.next
+ctrl + cmd - down : yabai -m window --focus stack.prev
+
+## Change order
+ctrl + cmd + alt - up : yabai -m window --swap stack.next && \
+                        yabai -m window --focus stack.next
+ctrl + cmd + alt - down : yabai -m window --swap stack.prev && \
+                          yabai -m window --focus stack.prev
+
 # Move windows between spaces
 ## Move one space left
 cmd + shift - left: yabai -m window --space prev && \
