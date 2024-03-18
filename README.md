@@ -45,3 +45,14 @@ First install tmux as the go to window multiplexer.
 
 ### TPM 
 Install [TPM](https://github.com/tmux-plugins/tpm).
+
+## Sketchybar
+Install Sketchybar as described in the [official documentation](https://github.com/FelixKratz/SketchyBar). Afterwards, copy the config from the Sketchybar directory to the config directory.
+
+## skhd
+Install skhd as described in the [official documentation](https://github.com/koekeishiya/skhd). Afterwards, copy the config from the skhd directory to the config directory.
+
+## yabai
+Install yabai as described in the [official documentation](https://github.com/koekeishiya/yabai). Afterwards, copy the config from the yabai directory to the config directory.
+
+IMPORTANT: Follow every step in the configuration, since this is crucial to make it run properly. Otherwise you can face several issues.
