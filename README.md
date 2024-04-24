@@ -56,3 +56,7 @@ Install skhd as described in the [official documentation](https://github.com/koe
 Install yabai as described in the [official documentation](https://github.com/koekeishiya/yabai). Afterwards, copy the config from the yabai directory to the config directory.
 
 IMPORTANT: Follow every step in the configuration, since this is crucial to make it run properly. Otherwise you can face several issues.
+
+## General Settings on macOS
+- Disable Menuebar
+- Disable Mission Control Shortcuts
