@@ -49,6 +49,7 @@ return {
 	["p"] = { name = "+Session"},
 	["d"] = { name = "+Diffview"},
 	["l"] = { name = "+LSP"},
+	["v"] = { name = "+Vimux"},
       }, { prefix = "<leader>" })	
     end,
     opts = {

@@ -6,8 +6,8 @@ vim.g.maplocalleader = " "
 vim.keymap.set("n", "<Esc>", ":noh<cr>", { noremap = true, silent = true })
 
 -- Buffer movement
-vim.keymap.set("n", "<S-l>", ":bn<cr>", { noremap = true, silent = true })
-vim.keymap.set("n", "<S-h>", ":bp<cr>", { noremap = true, silent = true })
+vim.keymap.set("n", "<S-l>", ":BufferNext<cr>", { noremap = true, silent = true })
+vim.keymap.set("n", "<S-h>", ":BufferPrevious<cr>", { noremap = true, silent = true })
 vim.keymap.set("n", "<leader>bd", ":BufferClose<cr>", { noremap = true, silent = true, desc = "Close Buffer" })
 
 -- Window movement
@@ -80,3 +80,8 @@ vim.keymap.set("n", "<leader>dc", ":DiffviewClose<cr>", { noremap = true, silent
 
 -- LSP
 vim.keymap.set("n", "<leader>lt", ":TroubleToggle<cr>", { noremap = true, silent = true, desc = "Toggle Trouble LSP" })
+
+-- Vimux
+vim.keymap.set("n", "<leader>vr", ":VimuxRunLastCommand<cr>", { noremap = true, silent = true, desc = "Vimux run last command" })
+vim.keymap.set("n", "<leader>vo", ":VimuxOpenRunner<cr>", { noremap = true, silent = true, desc = "Vimux open runner" })
+vim.keymap.set("n", "<leader>vc", ":VimuxCloseRunner<cr>", { noremap = true, silent = true, desc = "Vimux close runner" })
