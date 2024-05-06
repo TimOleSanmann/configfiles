@@ -9,3 +9,11 @@ vim.api.nvim_create_autocmd("TextYankPost", {
   group = augroup "highlight_yank",
   pattern = "*",
 })
+
+vim.api.nvim_create_autocmd({"BufNewFile", "BufRead"}, {
+  callback = function()
+    vim.cmd([[ setfiletype coffee ]])
+  end,
+  group = augroup "ft",
+  pattern = "*.coffee",
+})

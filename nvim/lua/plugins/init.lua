@@ -1,4 +1,6 @@
 return {
+  { "kchmck/vim-coffee-script" },
+  { "digitaltoad/vim-pug" },
   { 'echasnovski/mini.indentscope', version = '*' },
   { 
     "ellisonleao/gruvbox.nvim",
@@ -20,6 +22,9 @@ return {
 	diagnostics = {
 	  enable = true,
 	  show_on_dirs = true
+	},
+	update_focused_file = {
+	  enable = true,
 	}
       }
     end,	
@@ -390,9 +395,7 @@ return {
 	end,
 	-- Next, you can provide a dedicated handler for specific servers.
 	-- For example, a handler override for the `rust_analyzer`:
-	["rust_analyzer"] = function ()
-	  require("rust-tools").setup {}
-	end
+	require('lspconfig').coffeesense.setup{}
       }
     end
   },
