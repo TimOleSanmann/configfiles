@@ -8,7 +8,10 @@ vim.keymap.set("n", "<Esc>", ":noh<cr>", { noremap = true, silent = true })
 -- Buffer movement
 vim.keymap.set("n", "<S-l>", ":BufferNext<cr>", { noremap = true, silent = true })
 vim.keymap.set("n", "<S-h>", ":BufferPrevious<cr>", { noremap = true, silent = true })
-vim.keymap.set("n", "<leader>bd", ":BufferClose<cr>", { noremap = true, silent = true, desc = "Close Buffer" })
+vim.keymap.set("n", "<leader>bd", ":BufferClose<cr>", { noremap = true, silent = true, desc = "Close buffer" })
+vim.keymap.set("n", "<leader>bmn", ":BufferMoveNext<cr>", { noremap = true, silent = true, desc = "Buffer move next" })
+vim.keymap.set("n", "<leader>bmp", ":BufferMovePrevious<cr>", { noremap = true, silent = true, desc = "Buffer move previous" })
+vim.keymap.set("n", "<leader>bca", ":BufferCloseAllButCurrent<cr>", { noremap = true, silent = true, desc = "Buffer close all but current" })
 
 -- Window movement
 vim.keymap.set("n", "<C-h>", "<C-w>h", { noremap = true, silent = true })
@@ -48,6 +51,12 @@ vim.keymap.set("n", "<leader>csn", ":set nospell<cr>", { noremap = true, silent 
 
 -- Hop
 vim.keymap.set("n", "<leader><leader>w", ":HopWord<cr>", { noremap = true, silent = true, desc = "Hop Word"})
+
+-- Resize
+vim.keymap.set("n", "<leader><leader>l", ":vertical resize +10<cr>", { noremap = true, silent = true, desc = ""})
+vim.keymap.set("n", "<leader><leader>h", ":vertical resize -10<cr>", { noremap = true, silent = true, desc = ""})
+vim.keymap.set("n", "<leader><leader>k", ":resize +10<cr>", { noremap = true, silent = true, desc = ""})
+vim.keymap.set("n", "<leader><leader>j", ":resize -10<cr>", { noremap = true, silent = true, desc = ""})
 
 -- Markdown Preview
 vim.keymap.set("n", "<leader>mt", ":MarkdownPreviewToggle<cr>", { noremap = true, silent = true, desc = "Toggle Markdown Preview"})
