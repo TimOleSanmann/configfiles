@@ -74,7 +74,7 @@ vim.keymap.set('v', '<leader>sw', '<esc><cmd>lua require("spectre").open_visual(
 vim.keymap.set('n', '<leader>sp', '<cmd>lua require("spectre").open_file_search({select_word=true})<CR>', { desc = "Search on current file" })
 
 -- Diffview
-vim.keymap.set("n", "<leader>df", ":DiffviewFileHistory<cr>", { noremap = true, silent = true, desc = "Open diffview File History" })
+vim.keymap.set("n", "<leader>df", ":DiffviewFileHistory %<cr>", { noremap = true, silent = true, desc = "Open diffview File History" })
 vim.keymap.set("n", "<leader>do", ":DiffviewOpen<cr>", { noremap = true, silent = true, desc = "Open diffview open" })
 vim.keymap.set("n", "<leader>dc", ":DiffviewClose<cr>", { noremap = true, silent = true, desc = "Open diffview close" })
 

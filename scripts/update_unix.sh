@@ -18,7 +18,7 @@ then
 fi
 cd $SCRIPT_DIR
 cd ..
-cp -rv ./nvim/ $TARGET
-cp -rv ./sketchybar/ $TARGET
-cp -rv ./skhd/ $TARGET
-cp -rv ./yabai/ $TARGET
+cp -rv ./nvim $TARGET
+cp -rv ./sketchybar $TARGET
+cp -rv ./skhd $TARGET
+cp -rv ./yabai $TARGET
