@@ -18,14 +18,10 @@ sketchybar --bar height=32        \
                  padding_left=10  \
                  padding_right=10 \
                  color=0xff282828
-##### Changing Defaults #####
-# We now change some default values that are applied to all further items
-# For a full list of all available item properties see:
-# https://felixkratz.github.io/SketchyBar/config/items
 
-sketchybar --default icon.font="Hack Nerd Font:Bold:17.0"  \
+sketchybar --default icon.font="Hack Nerd Font:Bold:14.0"  \
                      icon.color=0xffebdbb2                 \
-                     label.font="Hack Nerd Font:Bold:14.0" \
+                     label.font="Hack Nerd Font:Bold:13.0" \
                      label.color=0xffebdbb2                \
                      padding_left=5                        \
                      padding_right=5                       \
@@ -34,12 +30,8 @@ sketchybar --default icon.font="Hack Nerd Font:Bold:17.0"  \
                      icon.padding_left=4                   \
                      icon.padding_right=4
 
-##### Adding Mission Control Space Indicators #####
-# Now we add some mission control spaces:
-# https://felixkratz.github.io/SketchyBar/config/components#space----associate-mission-control-spaces-with-an-item
-# to indicate active and available mission control spaces
 
-SPACE_ICONS=("1" "2" "3" "4" "5" "6" "7" "8" "9" "10")
+SPACE_ICONS=("General" "Work" "Browser" "E-Mail" "Orga" "Stuff")
 
 for i in "${!SPACE_ICONS[@]}"
 do
@@ -94,7 +86,12 @@ sketchybar --add item clock right                              \
            --add item battery right                            \
            --set battery script="$PLUGIN_DIR/battery.sh"       \
                          update_freq=120                       \
-           --subscribe battery system_woke power_source_change
+           --subscribe battery system_woke power_source_change \
+                                                               \
+           --add item yabai_space_type right                              \
+           --set yabai_space_type script="$PLUGIN_DIR/yabai_space_type.sh"\
+                         update_freq=1                       \
+           --subscribe yabai_space_type space_change display_change
 
 ##### Finalizing Setup #####
 # The below command is only needed at the end of the initial configuration to

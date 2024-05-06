@@ -2,7 +2,7 @@
 SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 
 TARGET=$1
-DEFAULT_TARGET=~/.config/nvim
+DEFAULT_TARGET=~/.config
 
 if [ -z "$TARGET" ]
 then
@@ -18,5 +18,7 @@ then
 fi
 cd $SCRIPT_DIR
 cd ..
-cp -rv ./init.vim $TARGET/init.vim
-cp -rv ./lua $TARGET
+cp -rv ./nvim/ $TARGET
+cp -rv ./sketchybar/ $TARGET
+cp -rv ./skhd/ $TARGET
+cp -rv ./yabai/ $TARGET

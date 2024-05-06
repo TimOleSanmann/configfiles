@@ -286,6 +286,12 @@ return {
     "preservim/vimux"
   },
   {
+    "folke/neoconf.nvim",
+    init = function()
+	require("neoconf").setup({})
+    end
+  },
+  {
     "hrsh7th/nvim-cmp",
     dependencies = {
       "neovim/nvim-lspconfig",
@@ -407,5 +413,5 @@ return {
   },
   {
     "mfussenegger/nvim-dap",
-  }
+  },
 }

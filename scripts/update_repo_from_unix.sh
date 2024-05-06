@@ -2,7 +2,7 @@
 SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 
 SOURCE=$1
-DEFAULT_SOURCE=~/.config/nvim
+DEFAULT_SOURCE=~/.config
 
 if [ -z "$SOURCE" ] 
 then 
@@ -19,4 +19,8 @@ fi
 
 cd $SCRIPT_DIR
 cd ..
-cp -rv $SOURCE/* .
+cp ~/.tmux.conf ./.tmux.conf
+cp -rv $SOURCE/nvim .
+cp -rv $SOURCE/sketchybar .
+cp -rv $SOURCE/skhd .
+cp -rv $SOURCE/yabai .
