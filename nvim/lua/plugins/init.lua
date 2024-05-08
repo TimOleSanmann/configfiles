@@ -55,6 +55,7 @@ return {
 	["d"] = { name = "+Diffview"},
 	["l"] = { name = "+LSP"},
 	["v"] = { name = "+Vimux"},
+	["g"] = { name = "+Git"},
       }, { prefix = "<leader>" })	
     end,
     opts = {

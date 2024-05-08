@@ -94,3 +94,7 @@ vim.keymap.set("n", "<leader>lt", ":TroubleToggle<cr>", { noremap = true, silent
 vim.keymap.set("n", "<leader>vr", ":VimuxRunLastCommand<cr>", { noremap = true, silent = true, desc = "Vimux run last command" })
 vim.keymap.set("n", "<leader>vo", ":VimuxOpenRunner<cr>", { noremap = true, silent = true, desc = "Vimux open runner" })
 vim.keymap.set("n", "<leader>vc", ":VimuxCloseRunner<cr>", { noremap = true, silent = true, desc = "Vimux close runner" })
+
+-- Signs
+vim.keymap.set("n", "<leader>gd", ":Gitsigns toggle_deleted<cr>", { noremap = true, silent = true, desc = "Gitsigns toggle deleted" })
+vim.keymap.set("n", "<leader>gs", ":Gitsigns toggle_signs<cr>", { noremap = true, silent = true, desc = "Gitsigns toggle signs" })
