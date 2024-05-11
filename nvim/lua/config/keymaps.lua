@@ -13,7 +13,7 @@ vim.keymap.set("n", "<leader>bmn", ":BufferMoveNext<cr>", { noremap = true, sile
 vim.keymap.set("n", "<leader>bmp", ":BufferMovePrevious<cr>", { noremap = true, silent = true, desc = "Buffer move previous" })
 vim.keymap.set("n", "<leader>bca", ":BufferCloseAllButCurrent<cr>", { noremap = true, silent = true, desc = "Buffer close all but current" })
 
--- Window movement
+-- Window
 vim.keymap.set("n", "<C-h>", "<C-w>h", { noremap = true, silent = true })
 vim.keymap.set("n", "<C-l>", "<C-w>l", { noremap = true, silent = true })
 vim.keymap.set("n", "<C-j>", "<C-w>j", { noremap = true, silent = true })
@@ -21,6 +21,8 @@ vim.keymap.set("n", "<C-k>", "<C-w>k", { noremap = true, silent = true })
 vim.keymap.set("n", "<leader>wd", "<C-w>q", { noremap = true, silent = true, desc = "Close window" })
 vim.keymap.set("n", "<leader>w-", ":split<cr>", { noremap = true, silent = true, desc = "Split window horizontal" })
 vim.keymap.set("n", "<leader>w|", ":vsplit<cr>", { noremap = true, silent = true, desc = "Split window vertical" })
+vim.keymap.set("n", "<leader>wh", ":windo wincmd H<cr>", { noremap = true, silent = true, desc = "Convert all splits to horizontal" })
+vim.keymap.set("n", "<leader>wv", ":windo wincmd K<cr>", { noremap = true, silent = true, desc = "Convert all splits to vertical" })
 
 -- Config keymaps
 local function toggleRelativeNumber()
@@ -98,3 +100,9 @@ vim.keymap.set("n", "<leader>vc", ":VimuxCloseRunner<cr>", { noremap = true, sil
 -- Signs
 vim.keymap.set("n", "<leader>gd", ":Gitsigns toggle_deleted<cr>", { noremap = true, silent = true, desc = "Gitsigns toggle deleted" })
 vim.keymap.set("n", "<leader>gs", ":Gitsigns toggle_signs<cr>", { noremap = true, silent = true, desc = "Gitsigns toggle signs" })
+
+-- NvimTree
+vim.keymap.set("n", "<leader>ee", ":NvimTreeToggle<cr>", { noremap = true, silent = true, desc = "Toggle NvimTree" })
+vim.keymap.set("n", "<leader>ef", ":NvimTreeFocus<cr>", { noremap = true, silent = true, desc = "Focus NvimTree" })
+vim.keymap.set("n", "<leader>el", ":NvimTreeResize +20<cr>", { noremap = true, silent = true, desc = "Increase NvimTree size" })
+vim.keymap.set("n", "<leader>eh", ":NvimTreeResize -20<cr>", { noremap = true, silent = true, desc = "Decrease NvimTree size" })

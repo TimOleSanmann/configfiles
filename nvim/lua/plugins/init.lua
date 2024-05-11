@@ -25,6 +25,12 @@ return {
 	},
 	update_focused_file = {
 	  enable = true,
+	},
+	view = {
+	  preserve_window_proportions = true,
+	  width = 40
+	},
+	renderer = {
 	}
       }
     end,	
@@ -40,14 +46,11 @@ return {
 
       wk.register({
 	f = { name = "file" },
-	e = {
-	  name = "explorer",
-	  e = { ":NvimTreeToggle<cr>", "Toggle Tree view" }
-	},
+	e = { name = "explorer" },
 	z = { ":Lazy<cr>", "Open Lazygit" },
 	w = { name = "window" },
 	c = { name = "config" },
-	["<leader><leader>"] = { name = "+Hop" },
+	["<leader><leader>"] = { name = "+Fast Commands" },
 	["b"] = { name = "+Buffer" },
 	["m"] = { name = "+Markdown"},
 	["s"] = { name = "+Spell checking"},
@@ -191,7 +194,7 @@ return {
 	      key = 'p',
 	      key_format = '%s',
 	      key_hl = 'Number',
-	      action = 'lua require("persistence").load({ last = true })'
+	      action = 'lua require("persistence").load()'
 	    },
 	    {
 	      icon = ' ',
