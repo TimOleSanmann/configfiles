@@ -92,10 +92,18 @@ vim.keymap.set("n", "<leader>dc", ":DiffviewClose<cr>", { noremap = true, silent
 -- LSP
 vim.keymap.set("n", "<leader>lt", ":TroubleToggle<cr>", { noremap = true, silent = true, desc = "Toggle Trouble LSP" })
 
+
+local function enterAndExecuteCommand()
+  vim.ui.input({ prompt = 'Enter command: ' }, function(input)
+    vim.cmd(':VimuxRunCommand("' .. input .. '")')
+  end)
+end
+
 -- Vimux
 vim.keymap.set("n", "<leader>vr", ":VimuxRunLastCommand<cr>", { noremap = true, silent = true, desc = "Vimux run last command" })
 vim.keymap.set("n", "<leader>vo", ":VimuxOpenRunner<cr>", { noremap = true, silent = true, desc = "Vimux open runner" })
 vim.keymap.set("n", "<leader>vc", ":VimuxCloseRunner<cr>", { noremap = true, silent = true, desc = "Vimux close runner" })
+vim.keymap.set("n", "<leader>ve", enterAndExecuteCommand, { desc = "enterAndExecuteCommand" })
 
 -- Signs
 vim.keymap.set("n", "<leader>gd", ":Gitsigns toggle_deleted<cr>", { noremap = true, silent = true, desc = "Gitsigns toggle deleted" })
