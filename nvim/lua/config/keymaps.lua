@@ -103,7 +103,7 @@ end
 vim.keymap.set("n", "<leader>vr", ":VimuxRunLastCommand<cr>", { noremap = true, silent = true, desc = "Vimux run last command" })
 vim.keymap.set("n", "<leader>vo", ":VimuxOpenRunner<cr>", { noremap = true, silent = true, desc = "Vimux open runner" })
 vim.keymap.set("n", "<leader>vc", ":VimuxCloseRunner<cr>", { noremap = true, silent = true, desc = "Vimux close runner" })
-vim.keymap.set("n", "<leader>ve", enterAndExecuteCommand, { desc = "enterAndExecuteCommand" })
+vim.keymap.set("n", "<leader>ve", enterAndExecuteCommand, { noremap = true, silent = true, desc = "Vimux execute command" })
 
 -- Signs
 vim.keymap.set("n", "<leader>gd", ":Gitsigns toggle_deleted<cr>", { noremap = true, silent = true, desc = "Gitsigns toggle deleted" })
