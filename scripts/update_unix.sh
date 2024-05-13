@@ -18,6 +18,7 @@ then
 fi
 cd $SCRIPT_DIR
 cd ..
+cp .tmux.conf ~/.tmux.conf
 cp -rv ./nvim $TARGET
 cp -rv ./sketchybar $TARGET
 cp -rv ./skhd $TARGET
