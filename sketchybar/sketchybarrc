@@ -31,7 +31,7 @@ sketchybar --default icon.font="Hack Nerd Font:Bold:14.0"  \
                      icon.padding_right=4
 
 
-SPACE_ICONS=("General" "Work" "Browser" "E-Mail" "Orga" "Stuff")
+SPACE_ICONS=("General" "Work" "Browser" "E-Mail" "Orga" "Stuff" "7" "8" "9" "10")
 
 for i in "${!SPACE_ICONS[@]}"
 do

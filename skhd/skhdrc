@@ -95,34 +95,17 @@ cmd + shift - 6: id="$(yabai -m query --windows | jq 'map(select(."has-focus" ==
                  yabai -m space --focus 6 && \
                  yabai -m window --focus "${id}"
 
-# --------------------------------------------------------------
-# Move window to spaces
-# ctrl + shift - left: yabai -m window --space prev && \
-#                    yabai -m space --focus prev
-#
-# ctrl + shift - right: yabai -m window --space next && \
-#                     yabai -m space --focus next
-#
-# ctrl + shift - 1: yabai -m window --space 1 && \
-#                 yabai -m space --focus 1
-#
-# ctrl + shift - 2: yabai -m window --space 2 && \
-#                 yabai -m space --focus 2
-#
-# ctrl + shift - 3: yabai -m window --space 3 && \
-#                 yabai -m space --focus 3
-#
-# ctrl + shift - 4: yabai -m window --space 4 && \
-#                 yabai -m space --focus 4
-#
-# ctrl + shift - 5: yabai -m window --space 5 && \
-#                 yabai -m space --focus 5
-#
-# ctrl + shift - 6: yabai -m window --space 6 && \
-#                 yabai -m space --focus 6
-#
-# # Move window within the space
-# ctrl + cmd - left : yabai -m window --swap west
-# ctrl + cmd - right : yabai -m window --swap east
-# ctrl + cmd - return : yabai -m window --toggle zoom-fullscreen
-#
+ctrl + shift - 1: id="$(yabai -m query --windows | jq 'map(select(."has-focus" == true))[0].id')" && \
+                     yabai -m window --display 1 && \
+		     yabai -m display --focus 1 && \
+		     yabai -m window --focus "${id}"
+
+ctrl + shift - 2: id="$(yabai -m query --windows | jq 'map(select(."has-focus" == true))[0].id')" && \
+                     yabai -m window --display 2 && \
+		     yabai -m display --focus 2 && \
+		     yabai -m window --focus "${id}"
+
+ctrl + shift - 3: id="$(yabai -m query --windows | jq 'map(select(."has-focus" == true))[0].id')" && \
+                     yabai -m window --display 3 && \
+		     yabai -m display --focus 3 && \
+		     yabai -m window --focus "${id}"
