@@ -246,7 +246,7 @@ return {
 	char = "│",
 	tab_char = "│",
       },
-      scope = { enabled = false },
+      scope = { enabled = true },
       exclude = {
 	filetypes = {
 	  "help",
@@ -301,6 +301,19 @@ return {
     end
   },
   {
+    "L3MON4D3/LuaSnip",
+    version = "v2.*", -- Replace <CurrentMajor> by the latest released major (first number of latest release)
+    build = "make install_jsregexp",
+    dependencies = {
+      "rafamadriz/friendly-snippets"
+    },
+    config = function()
+      require("luasnip.loaders.from_vscode").lazy_load()
+      -- load snippets from path/of/your/nvim/config/my-cool-snippets
+      -- require("luasnip.loaders.from_vscode").load({ paths = { "./lua/plugins/snippets" } })
+    end;
+  },
+  {
     "hrsh7th/nvim-cmp",
     dependencies = {
       "neovim/nvim-lspconfig",
@@ -315,6 +328,11 @@ return {
       local luasnip = require("luasnip")
       local cmp = require("cmp")
       cmp.setup({
+     	snippet = {
+	  expand = function(args)
+	    require('luasnip').lsp_expand(args.body)
+	  end,
+	},
 	sources = cmp.config.sources({
 	  { name = "buffer" },
 	  { name = "path" },
@@ -360,19 +378,6 @@ return {
 	})
       })
     end,
-  },
-  {
-    "L3MON4D3/LuaSnip",
-    version = "v2.*", -- Replace <CurrentMajor> by the latest released major (first number of latest release)
-    build = "make install_jsregexp",
-    dependencies = {
-      "rafamadriz/friendly-snippets"
-    },
-    config = function()
-      require("luasnip.loaders.from_vscode").lazy_load()
-      -- load snippets from path/of/your/nvim/config/my-cool-snippets
-      require("luasnip.loaders.from_vscode").load({ paths = { "./lua/plugins/snippets" } })
-    end;
   },
   {
     "RRethy/vim-illuminate",
