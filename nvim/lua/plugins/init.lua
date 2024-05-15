@@ -59,6 +59,7 @@ return {
 	["l"] = { name = "+LSP"},
 	["v"] = { name = "+Vimux"},
 	["g"] = { name = "+Git"},
+	["x"] = { name = "+Todo"},
       }, { prefix = "<leader>" })	
     end,
     opts = {
@@ -323,6 +324,7 @@ return {
       "hrsh7th/cmp-cmdline",
       "L3MON4D3/LuaSnip",
       "saadparwaiz1/cmp_luasnip",
+      "hrsh7th/cmp-nvim-lsp-signature-help"
     },
     config = function()
       local luasnip = require("luasnip")
@@ -337,7 +339,8 @@ return {
 	  { name = "buffer" },
 	  { name = "path" },
 	  { name = "nvim_lsp" },
-	  { name = "luasnip" }
+	  { name = "luasnip" },
+	  { name = "nvim_lsp_signature_help"}
 	}),
 	formatting = {
 	  format = function(entry, vim_item)
@@ -425,5 +428,10 @@ return {
   },
   {
     "mfussenegger/nvim-dap",
+  },
+  {
+    "folke/todo-comments.nvim",
+    dependencies = { "nvim-lua/plenary.nvim" },
+    config = true,
   },
 }

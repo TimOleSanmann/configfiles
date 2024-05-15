@@ -103,7 +103,7 @@ end
 vim.keymap.set("n", "<leader>vr", ":VimuxRunLastCommand<cr>", { noremap = true, silent = true, desc = "Vimux run last command" })
 vim.keymap.set("n", "<leader>vo", ":VimuxOpenRunner<cr>", { noremap = true, silent = true, desc = "Vimux open runner" })
 vim.keymap.set("n", "<leader>vc", ":VimuxCloseRunner<cr>", { noremap = true, silent = true, desc = "Vimux close runner" })
-vim.keymap.set("n", "<leader>ve", enterAndExecuteCommand, { noremap = true, silent = true, desc = "Vimux execute command" })
+vim.keymap.set("n", "<leader>ve", enterAndExecuteCommand, { desc = "enterAndExecuteCommand" })
 
 -- Signs
 vim.keymap.set("n", "<leader>gd", ":Gitsigns toggle_deleted<cr>", { noremap = true, silent = true, desc = "Gitsigns toggle deleted" })
@@ -114,3 +114,6 @@ vim.keymap.set("n", "<leader>ee", ":NvimTreeToggle<cr>", { noremap = true, silen
 vim.keymap.set("n", "<leader>ef", ":NvimTreeFocus<cr>", { noremap = true, silent = true, desc = "Focus NvimTree" })
 vim.keymap.set("n", "<leader>el", ":NvimTreeResize +20<cr>", { noremap = true, silent = true, desc = "Increase NvimTree size" })
 vim.keymap.set("n", "<leader>eh", ":NvimTreeResize -20<cr>", { noremap = true, silent = true, desc = "Decrease NvimTree size" })
+
+-- Todo
+vim.keymap.set("n", "<leader>xt", ":TodoTelescope<cr>", { noremap = true, silent = true, desc = "Todo Telescope" })
