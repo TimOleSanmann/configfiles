@@ -31,6 +31,9 @@ return {
 	  width = 40
 	},
 	renderer = {
+	},
+	live_filter = {
+	  always_show_folders = false
 	}
       }
     end,	
@@ -324,7 +327,8 @@ return {
       "hrsh7th/cmp-cmdline",
       "L3MON4D3/LuaSnip",
       "saadparwaiz1/cmp_luasnip",
-      "hrsh7th/cmp-nvim-lsp-signature-help"
+      "hrsh7th/cmp-nvim-lsp-signature-help",
+      "github/copilot.vim"
     },
     config = function()
       local luasnip = require("luasnip")
@@ -433,5 +437,12 @@ return {
     "folke/todo-comments.nvim",
     dependencies = { "nvim-lua/plenary.nvim" },
     config = true,
+  },
+  {
+    'Bekaboo/dropbar.nvim',
+    -- optional, but required for fuzzy finder support
+    dependencies = {
+      'nvim-telescope/telescope-fzf-native.nvim'
+    }
   },
 }
