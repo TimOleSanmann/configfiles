@@ -17,12 +17,12 @@ sketchybar --bar height=32        \
                  sticky=on        \
                  padding_left=10  \
                  padding_right=10 \
-                 color=0xff282828
+                 color=0xff303446
 
 sketchybar --default icon.font="Hack Nerd Font:Bold:14.0"  \
-                     icon.color=0xffebdbb2                 \
+                     icon.color=0xffc6d0f5                 \
                      label.font="Hack Nerd Font:Bold:13.0" \
-                     label.color=0xffebdbb2                \
+                     label.color=0xffc6d0f5                \
                      padding_left=5                        \
                      padding_right=5                       \
                      label.padding_left=4                  \
