@@ -7,4 +7,11 @@ vim.opt.undofile = true
 vim.opt.ignorecase = true
 vim.opt.updatetime = 250
 vim.opt.signcolumn = "yes"
-vim.opt.clipboard = ""
+
+vim.g.VM_maps = {
+  ["Select Cursor Down"] = "<S-C-Down>",
+  ["Select Cursor Up"] = "<S-C-Up>",
+}
+
+-- vim.cmd.colorscheme("gruvbox")
+vim.cmd("colorscheme catppuccin-frappe")
