@@ -61,8 +61,9 @@ vim.keymap.set('v', '<leader><leader>p', "<cmd>HopPattern<cr>", { noremap = true
 
 -- Telescope
 vim.keymap.set('n', '<leader>ff', ":Telescope find_files<cr>", { noremap = true, silent = true, desc = "Telescope find files"})
+vim.keymap.set('n', '<leader>fv', ":Telescope git_files<cr>", { noremap = true, silent = true, desc = "Telescope find files"})
 vim.keymap.set('n', '<leader>fg', ":Telescope live_grep<cr>", { noremap = true, silent = true, desc = "Telescope live grep"})
-vim.keymap.set('n', '<leader>ft', ":Telescope grep_text<cr>", { noremap = true, silent = true, desc = "Telescope grep current text"})
+vim.keymap.set('n', '<leader>ft', ":Telescope grep_string<cr>", { noremap = true, silent = true, desc = "Telescope grep current text"})
 vim.keymap.set('n', '<leader>fb', ":Telescope buffers<cr>", { noremap = true, silent = true, desc = "Telescope buffers"})
 vim.keymap.set('n', '<leader>fx', ":Telescope<cr>", { noremap = true, silent = true, desc = "Telescope"})
 vim.keymap.set('n', '<leader>flr', ":Telescope lsp_references<cr>", { noremap = true, silent = true, desc = "Telescope lsp references"})
@@ -73,3 +74,9 @@ vim.keymap.set('n', '<leader>S', '<cmd>lua require("spectre").toggle()<CR>', { d
 vim.keymap.set('n', '<leader>sw', '<cmd>lua require("spectre").open_visual({select_word=true})<CR>', { desc = "Search current word" })
 vim.keymap.set('v', '<leader>sw', '<esc><cmd>lua require("spectre").open_visual()<CR>', { desc = "Search current word" })
 vim.keymap.set('n', '<leader>sp', '<cmd>lua require("spectre").open_file_search({select_word=true})<CR>', { desc = "Search on current file" })
+
+-- Git
+vim.keymap.set('n', '<leader>gn', '<cmd>Gitsigns next_hunk<CR>zz', { desc = "Gitsigns next hunk" })
+vim.keymap.set('n', '<leader>gp', '<cmd>Gitsigns prev_hunk<CR>zz', { desc = "Gitsigns prev hunk" })
+vim.keymap.set('n', '<leader>gdo', '<cmd>:DiffviewOpen<CR>', { desc = "Open Diffview" })
+vim.keymap.set('n', '<leader>gdx', '<cmd>:DiffviewClose<CR>', { desc = "Close Diffview" })

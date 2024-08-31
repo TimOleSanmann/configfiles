@@ -22,9 +22,10 @@ return {
       vim.fn.system("npm install -g dockerfile-language-server-nodejs")
       vim.fn.system("npm install -g @microsoft/compose-language-service")
       vim.fn.system("go install golang.org/x/tools/gopls@latest")
+      vim.fn.system("brew install alesbrelih/gitlab-ci-ls/gitlab-ci-ls")
     end,
     dependencies = {
-      "mfussenegger/nvim-jdtls"
+      "mfussenegger/nvim-jdtls",
     },
     config = function()
       local capabilities = vim.lsp.protocol.make_client_capabilities()
@@ -37,12 +38,12 @@ return {
         capabilities = capabilities,
       })
       require("lspconfig").lua_ls.setup({})
-
       require("lspconfig").tsserver.setup({})
       require("lspconfig").ansiblels.setup({})
       require("lspconfig").dockerls.setup({})
       require("lspconfig").docker_compose_language_service.setup({})
       require("lspconfig").gopls.setup({})
+      require("lspconfig").gitlab_ci_ls.setup({})
     end,
   },
   {

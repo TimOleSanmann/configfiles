@@ -96,6 +96,8 @@ return {
           { "<leader><leader>", group = "Hop" },
           { "<leader>f", group = "Telescope" },
           { "<leader>fl", group = "Telescope LSP" },
+          { "<leader>g", group = "Git" },
+          { "<leader>gd", group = "Git diffview" },
         },
 
         -- c = { name = "config" },
@@ -160,6 +162,16 @@ return {
               action = "Telescope find_files",
             },
             {
+              icon = " ",
+              icon_hl = "Title",
+              desc = "Search git files",
+              desc_hl = "String",
+              key = "v",
+              key_hl = "Number",
+              key_format = " [%s]", -- `%s` will be substituted with value of `key`
+              action = "Telescope git_files",
+            },
+            {
               icon = "󰱼 ",
               icon_hl = "Title",
               desc = "Search string",
@@ -198,6 +210,16 @@ return {
               key_format = " [%s]",
               key_hl = "Number",
               action = "Lazy",
+            },
+            {
+              icon = "󰩈 ",
+              icon_hl = "Title",
+              desc = "Quit",
+              desc_hl = "String",
+              key = "q",
+              key_format = " [%s]",
+              key_hl = "Number",
+              action = "qa!",
             },
           },
         },
@@ -335,5 +357,23 @@ return {
     "ThePrimeagen/harpoon",
     branch = "harpoon2",
     dependencies = { "nvim-lua/plenary.nvim" },
+  },
+  {
+    "lewis6991/gitsigns.nvim",
+    config = function()
+      require("gitsigns").setup({
+        current_line_blame = true,
+        current_line_blame_opts = {
+          virt_text = true,
+          virt_text_pos = "eol", -- 'eol' | 'overlay' | 'right_align'
+          delay = 0,
+          ignore_whitespace = true,
+          virt_text_priority = 100,
+        },
+      })
+    end,
+  },
+  {
+    "sindrets/diffview.nvim",
   },
 }

@@ -31,9 +31,16 @@ vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
 })
 
 vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
-  pattern = {"*/playbooks/*.yml", "*/inventories/*.yml", "*/roles/*.yml"},
+  pattern = { "*/playbooks/*.yml", "*/inventories/*.yml", "*/roles/*.yml" },
   callback = function()
     vim.bo.filetype = "yaml.ansible"
+  end,
+})
+
+vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
+  pattern = { "*gitlab-ci*.yml" },
+  callback = function()
+    vim.bo.filetype = "yaml.gitlab"
   end,
 })
 
@@ -43,5 +50,27 @@ vim.api.nvim_create_autocmd("FileType", {
     vim.opt_local.expandtab = false
     vim.opt_local.shiftwidth = 2
     vim.opt_local.tabstop = 2
+  end,
+})
+
+-- Autocommand for highlighting yank
+vim.api.nvim_create_autocmd("TextYankPost", {
+  pattern = "*",
+  callback = function()
+    vim.highlight.on_yank({ higroup = "Visual", timeout = 200 })
+  end,
+})
+
+-- Autocommand for write yank to system clipboard
+vim.api.nvim_create_autocmd("TextYankPost", {
+  pattern = "*",
+  callback = function()
+    vim.print(vim.fn.has("clipboard"))
+    if vim.fn.has("clipboard") == 1 then
+      -- Check if command was yank or delete
+      if vim.v.event.operator == "y" then
+        vim.fn.system("echo -n " .. vim.fn.shellescape(vim.fn.getreg('"')) .. " | pbcopy")
+      end
+    end
   end,
 })
