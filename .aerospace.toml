@@ -63,7 +63,7 @@ automatically-unhide-macos-hidden-apps = false
     inner.vertical =   0
     outer.left =       0
     outer.bottom =     0
-    outer.top =        30
+    outer.top =        [{monitor."Built-in Retina Display" = 0}, 30]
     outer.right =      0
 
 # 'main' binding mode declaration
@@ -133,6 +133,13 @@ automatically-unhide-macos-hidden-apps = false
     alt-shift-4 = 'move-node-to-workspace 4'
     alt-shift-5 = 'move-node-to-workspace 5'
     alt-shift-6 = 'move-node-to-workspace 6'
+
+    alt-cmd-1 = "summon-workspace 1"
+    alt-cmd-2 = "summon-workspace 2"
+    alt-cmd-3 = "summon-workspace 3"
+    alt-cmd-4 = "summon-workspace 4"
+    alt-cmd-5 = "summon-workspace 5"
+    alt-cmd-6 = "summon-workspace 6"
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
     alt-tab = 'workspace-back-and-forth'
